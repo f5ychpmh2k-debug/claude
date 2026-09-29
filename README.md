@@ -18,3 +18,9 @@ Protects **your own server** from join floods and spam.
 
 ## Commands (admin only)
 `/status`, `/lockdown`, `/unlock`, `/logchannel`, `/config <key> <value>`, `/whitelist <role>`
+
+## Terms of Service & Privacy Policy
+A static site lives in `docs/` (`index.html` = Terms, `privacy.html` = Privacy Policy).
+Replace the `[Operator Name]` and `[contact email]` placeholders, then publish it with
+GitHub Pages (Settings → Pages → deploy from branch, folder `/docs`) and paste the URLs
+into the Discord developer portal.

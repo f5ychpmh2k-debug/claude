@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy · Anti-Raid Bot</title>
+  <meta name="description" content="Privacy Policy for the Anti-Raid Discord bot.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="bar">
+    <a class="brand" href="index.html">🛡️ Anti-Raid Bot</a>
+    <nav>
+      <a href="index.html">Terms of Service</a>
+      <a href="privacy.html" aria-current="page">Privacy Policy</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: September 29, 2026</p>
+
+  <p class="note">
+    Short version: the Bot does not read your messages. It saves each server’s settings and briefly keeps timestamps
+    in memory to spot raids and spam.
+  </p>
+
+  <h2>What we store</h2>
+  <p>For each server the Bot is in, we save its configuration to disk:</p>
+  <ul>
+    <li>Server ID</li>
+    <li>The log channel ID, if one is set with <code>/logchannel</code></li>
+    <li>IDs of roles exempted with <code>/whitelist</code></li>
+    <li>Numeric settings and the lockdown action chosen with <code>/config</code></li>
+  </ul>
+
+  <h2>What we process temporarily</h2>
+  <p>While the Bot is running, it keeps the following in memory only. It is discarded within seconds, or when the Bot restarts:</p>
+  <ul>
+    <li>Times at which members joined a server, to detect join floods</li>
+    <li>Times at which members sent messages, with their user and server IDs, to detect spam</li>
+    <li>The number of user and role mentions in a message</li>
+    <li>Account creation date of members who join during a lockdown</li>
+    <li>Whether a server is currently in lockdown</li>
+  </ul>
+
+  <h2>What we don’t collect</h2>
+  <ul>
+    <li>Message content — the Bot does not request the Message Content intent</li>
+    <li>Direct messages</li>
+    <li>Email addresses, IP addresses, or payment information</li>
+  </ul>
+
+  <h2>Alerts and logs</h2>
+  <p>
+    When the Bot acts, it posts an alert to the server’s configured log channel. The alert includes the member’s
+    username, user ID, the action taken, the reason, and for joins, account age. Those messages are stored by Discord
+    and are controlled by that server’s administrators. The Bot also writes short operational logs, including server
+    names and the same alert text, for troubleshooting.
+  </p>
+
+  <h2>How we use data</h2>
+  <p>Only to run the Bot’s protection features and to troubleshoot problems. We do not sell, rent, or share data with third parties, and we do not use it for advertising.</p>
+
+  <h2>Retention and deletion</h2>
+  <p>
+    Server settings are kept until you ask us to delete them. Removing the Bot from your server stops all further
+    processing. To have a server’s saved settings deleted, contact us from an account with administrator rights on that server.
+  </p>
+
+  <h2>Third parties</h2>
+  <p>
+    The Bot runs on Discord, and your use of Discord is covered by
+    <a href="https://discord.com/privacy">Discord’s Privacy Policy</a>.
+  </p>
+
+  <h2>Children</h2>
+  <p>The Bot is not directed at children below the minimum age required to use Discord.</p>
+
+  <h2>Changes</h2>
+  <p>We may update this policy. The “Last updated” date above shows when it last changed.</p>
+
+  <h2>Contact</h2>
+  <p>Privacy questions or deletion requests: <a href="mailto:[contact email]">[contact email]</a>.</p>
+</main>
+
+<footer>
+  © 2026 [Operator Name] · <a href="index.html">Terms</a> · <a href="privacy.html">Privacy</a> ·
+  Not affiliated with Discord Inc.
+</footer>
+</body>
+</html>
